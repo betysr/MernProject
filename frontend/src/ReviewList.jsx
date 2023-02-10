@@ -3,6 +3,7 @@ import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import "./reviewList.css";
 
 
+
 const ReviewList = () => {
 
   return (
@@ -10,7 +11,7 @@ const ReviewList = () => {
       <h2>Hello</h2>
       <div className="searchInput">
       <GooglePlacesAutocomplete 
-      apiKey=""
+      apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
     />
       </div>
     </div>
